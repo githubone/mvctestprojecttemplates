@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewBag.Title - Eviivo Payment Administration</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/typeahead.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="page">
+       <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a  href="@Url.Action("Index", "Home")" class="navbar-brand">OGONE Payment Administration</a>
+                </div>
+                <nav class="collapse navbar-collapse" role="navigation">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a class="btn btn-default" href="@Url.Action("Search", "Home")">Merchant Account</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        @RenderSection("featured", required: false)
+        <section  class="container">
+            @RenderBody()
+        </section>
+    </div>
+  
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+   @RenderSection("scripts", required: false)
+    
+</body>
+</html>
