@@ -1,9 +1,11 @@
-﻿using System.Threading.Tasks;
+﻿using JustEatRAPPS.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace JustEatRAPPS.Service
 {
     public interface IRestaurantServiceClient
     {
-        Task<string> GetRestaurants(string postCode);
+        Task<List<RestaurantViewModel>> GetRestaurants(string postCode);
     }
 }

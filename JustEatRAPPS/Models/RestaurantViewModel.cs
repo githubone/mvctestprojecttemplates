@@ -6,13 +6,12 @@ namespace JustEatRAPPS.Models
     {
         public string Name { get; set; }
 
-        public string AverageRating { get; set; }
+        public double RatingStars { get; set; }
 
         public string RestaurantLogo { get; set; }
 
-        public string RestaurantLink { get; set; }
-
-        public List<string> Products { get; set; }
+        public string Url { get; set; }
 
     }
+  
 }
