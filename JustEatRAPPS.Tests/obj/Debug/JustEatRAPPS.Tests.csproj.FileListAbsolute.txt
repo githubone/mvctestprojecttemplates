@@ -221,3 +221,5 @@ Y:\program\git\restgembira\JustEatRAPPS.Tests\obj\Debug\JustEatRAPPS.Tests.dll
 Y:\program\git\restgembira\JustEatRAPPS.Tests\obj\Debug\JustEatRAPPS.Tests.pdb
 I:\program\git\restgembira\JustEatRAPPS.Tests\bin\Debug\AutoMapper.dll
 I:\program\git\restgembira\JustEatRAPPS.Tests\bin\Debug\AutoMapper.xml
+I:\program\git\restgembira\JustEatRAPPS.Tests\bin\Debug\Rhino.Mocks.dll
+I:\program\git\restgembira\JustEatRAPPS.Tests\bin\Debug\Rhino.Mocks.xml

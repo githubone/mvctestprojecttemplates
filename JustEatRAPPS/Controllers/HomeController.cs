@@ -6,6 +6,7 @@ using System.Web;
 using JustEatRAPPS.Controllers;
 using JustEatRAPPS.Common;
 using System.Text.RegularExpressions;
+using System;
 
 [assembly: PreApplicationStartMethod(typeof(HomeController), "Initialize")]
 namespace JustEatRAPPS.Controllers
@@ -33,6 +34,11 @@ namespace JustEatRAPPS.Controllers
         [ActionName("Index")]
         public async Task<ActionResult> Search(MainRestaurantViewModel mainRestaurantViewModel)
         {
+            if (mainRestaurantViewModel == null || string.IsNullOrEmpty(mainRestaurantViewModel.PostCode))
+            {
+                throw new ArgumentNullException("MainRestaurantViewModel");
+            }
+
             var result = await restaurantServiceClient.GetRestaurants(mainRestaurantViewModel.PostCode);
             mainRestaurantViewModel.Restaurants = result;
             return View(mainRestaurantViewModel);
@@ -41,6 +47,11 @@ namespace JustEatRAPPS.Controllers
         [HttpPost]
         public async Task<ActionResult> Products(MainProductViewModel mainProductViewModel)
         {
+            if (mainProductViewModel == null || string.IsNullOrEmpty(mainProductViewModel.RestaurantId))
+            {
+                throw new ArgumentNullException("MainProductViewModel");
+            }
+
             var products = await restaurantServiceClient.GetProducts(mainProductViewModel.RestaurantId);
             mainProductViewModel.Products = products;
             return PartialView("_Products", mainProductViewModel);
