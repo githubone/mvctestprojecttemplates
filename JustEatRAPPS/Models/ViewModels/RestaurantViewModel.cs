@@ -14,6 +14,7 @@ namespace JustEatRAPPS.Models
 
         public string Url { get; set; }
 
+        public List<string> ErrorMessages { get; set; }
     }
   
 }

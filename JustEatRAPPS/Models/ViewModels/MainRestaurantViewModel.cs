@@ -11,6 +11,7 @@ namespace JustEatRAPPS.Models
         public List<RestaurantViewModel> Restaurants { get; set; }
 
         [Required(ErrorMessage = "Post Code required")]
+        [RegularExpression(@"^[a-zA-Z]{2}\d{2}$", ErrorMessage = "Post Code is invalid")]
         public string PostCode { get; set; }
 
     }

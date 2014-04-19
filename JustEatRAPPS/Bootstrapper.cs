@@ -2,6 +2,7 @@ using System.Web.Mvc;
 using JustEatRAPPS.Service;
 using Microsoft.Practices.Unity;
 using Unity.Mvc4;
+using JustEatRAPPS.Common;
 
 namespace JustEatRAPPS
 {
@@ -28,6 +29,7 @@ namespace JustEatRAPPS
     public static void RegisterTypes(IUnityContainer container)
     {
         container.RegisterType<IRestaurantServiceClient, RestaurantServiceClient>();
+        container.RegisterType<ISearchValidator, SearchValidator>();
     }
   }
 }
