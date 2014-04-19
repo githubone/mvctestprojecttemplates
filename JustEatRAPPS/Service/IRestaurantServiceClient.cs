@@ -7,5 +7,7 @@ namespace JustEatRAPPS.Service
     public interface IRestaurantServiceClient
     {
         Task<List<RestaurantViewModel>> GetRestaurants(string postCode);
+
+        Task<List<ProductViewModel>> GetProducts(string restaurantId);
     }
 }

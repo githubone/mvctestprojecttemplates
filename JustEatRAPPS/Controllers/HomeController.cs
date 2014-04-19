@@ -40,8 +40,10 @@ namespace JustEatRAPPS.Controllers
 
 
         [HttpPost]
-        public ActionResult Products(MainProductViewModel mainProductViewModel)
+        public async Task<ActionResult> Products(MainProductViewModel mainProductViewModel)
         {
+            var products = await restaurantServiceClient.GetProducts(mainProductViewModel.RestaurantId);
+            mainProductViewModel.Products = products;
             return PartialView("_Products", mainProductViewModel);
 
         }

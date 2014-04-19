@@ -15,7 +15,7 @@ namespace JustEatRAPPS.Common
         {
             Mapper.CreateMap<RestModel.Restaurant, RestaurantViewModel>()
                 .ForMember(m => m.RestaurantLogo, o => o.MapFrom(s => s.Logo[0].StandardResolutionURL));
-            Mapper.CreateMap<ProductModel.ProductModel, ProductViewModel>();
+            Mapper.CreateMap<ProductModel.Product, ProductViewModel>();
         }
     }
 }

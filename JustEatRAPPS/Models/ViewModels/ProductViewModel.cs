@@ -9,6 +9,11 @@ namespace JustEatRAPPS.Models
     {
         public string Name { get; set; }
 
+        public string RestaurantMenuNumber { get; set; }
+
         public int RestaurantId { get; set; }
+
+        public string ProductDescription{get{return String.Concat(Name, "-", RestaurantMenuNumber);}
+        }
     }
 }

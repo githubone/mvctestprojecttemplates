@@ -30,7 +30,7 @@ namespace JustEatRAPPS.Models
             public string Description { get; set; }
 
             [JsonProperty("RestaurantMenuNumber")]
-            public int RestaurantMenuNumber { get; set; }
+            public string RestaurantMenuNumber { get; set; }
 
             [JsonProperty("RestaurantMenuNumberCode")]
             public string RestaurantMenuNumberCode { get; set; }
