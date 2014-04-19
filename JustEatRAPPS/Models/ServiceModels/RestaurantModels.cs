@@ -23,7 +23,7 @@ namespace JustEatRAPPS.Models
         {
 
             [JsonProperty("Id")]
-            public int Id { get; set; }
+            public string Id { get; set; }
 
             [JsonProperty("Name")]
             public string Name { get; set; }
@@ -123,6 +123,5 @@ namespace JustEatRAPPS.Models
         }
 
     }
-
 
 }

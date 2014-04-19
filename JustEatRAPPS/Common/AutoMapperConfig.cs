@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using RestModel = JustEatRAPPS.Models.RestaurantModels;
+using ProductModel = JustEatRAPPS.Models.ProductModels;
 
 namespace JustEatRAPPS.Common
 {
@@ -14,6 +15,7 @@ namespace JustEatRAPPS.Common
         {
             Mapper.CreateMap<RestModel.Restaurant, RestaurantViewModel>()
                 .ForMember(m => m.RestaurantLogo, o => o.MapFrom(s => s.Logo[0].StandardResolutionURL));
+            Mapper.CreateMap<ProductModel.ProductModel, ProductViewModel>();
         }
     }
 }

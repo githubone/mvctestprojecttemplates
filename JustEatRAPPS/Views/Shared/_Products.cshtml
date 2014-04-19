@@ -1,0 +1,19 @@
+﻿@model JustEatRAPPS.Models.MainProductViewModel
+@using (Ajax.BeginForm("Products", new AjaxOptions { UpdateTargetId = "targetId", HttpMethod = "Post" }))
+ {
+     @Html.HiddenFor(m=> m.RestaurantId)
+    <div id="targetId">
+    
+     @if (Model != null && Model.Products != null)
+     {
+         <ul class="list-group">
+            <li class="list-group-item"></li>
+        </ul>
+     
+     }else
+     {
+       <button type="submit" class="btn btn-default">Products</button>   
+     }
+         
+     </div>
+ }

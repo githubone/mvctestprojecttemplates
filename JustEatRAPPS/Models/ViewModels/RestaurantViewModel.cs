@@ -4,6 +4,8 @@ namespace JustEatRAPPS.Models
 {
     public class RestaurantViewModel
     {
+        public string Id { get; set; }
+
         public string Name { get; set; }
 
         public double RatingStars { get; set; }

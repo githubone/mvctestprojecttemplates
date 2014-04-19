@@ -14,7 +14,6 @@ I:\program\git\restgembira\JustEatRAPPS.Specs\bin\Debug\Autofac.Configuration.xm
 I:\program\git\restgembira\JustEatRAPPS.Specs\bin\Debug\nunit.framework.xml
 I:\program\git\restgembira\JustEatRAPPS.Specs\bin\Debug\WebDriver.xml
 I:\program\git\restgembira\JustEatRAPPS.Specs\bin\Debug\WebDriver.Support.xml
-I:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.csprojResolveAssemblyReference.cache
 I:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.dll
 I:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.pdb
 Y:\program\git\restgembira\JustEatRAPPS.Specs\bin\Debug\JustEatRAPPS.Specs.dll.config
@@ -36,3 +35,4 @@ Y:\program\git\restgembira\JustEatRAPPS.Specs\bin\Debug\WebDriver.Support.xml
 Y:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.dll
 Y:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.pdb
 Y:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.csprojResolveAssemblyReference.cache
+I:\program\git\restgembira\JustEatRAPPS.Specs\obj\Debug\JustEatRAPPS.Specs.csprojResolveAssemblyReference.cache

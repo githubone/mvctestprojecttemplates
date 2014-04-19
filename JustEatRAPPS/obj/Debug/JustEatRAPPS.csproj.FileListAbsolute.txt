@@ -153,7 +153,6 @@ I:\program\git\restgembira\JustEatRAPPS\bin\zh-Hans\System.Spatial.resources.dll
 I:\program\git\restgembira\JustEatRAPPS\bin\zh-Hant\System.Spatial.resources.dll
 I:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.dll
 I:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.pdb
-I:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.csprojResolveAssemblyReference.cache
 Y:\program\git\restgembira\JustEatRAPPS\bin\AutoMapper.Net4.dll
 Y:\program\git\restgembira\JustEatRAPPS\bin\JustEatRAPPS.dll
 Y:\program\git\restgembira\JustEatRAPPS\bin\JustEatRAPPS.pdb
@@ -232,3 +231,4 @@ Y:\program\git\restgembira\JustEatRAPPS\bin\zh-Hant\System.Spatial.resources.dll
 Y:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.dll
 Y:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.pdb
 Y:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.csprojResolveAssemblyReference.cache
+I:\program\git\restgembira\JustEatRAPPS\obj\Debug\JustEatRAPPS.csprojResolveAssemblyReference.cache

@@ -167,13 +167,19 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="Common\AutoMapperConfig.cs" />
+    <Compile Include="Common\Constants.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\MainRestaurantViewModel.cs" />
-    <Compile Include="Models\RestaurantModels.cs" />
-    <Compile Include="Models\RestaurantViewModel.cs" />
+    <Compile Include="Models\ViewModels\MainProductViewModel.cs" />
+    <Compile Include="Models\ViewModels\MainRestaurantViewModel.cs" />
+    <Compile Include="Models\ServiceModels\MenuModels.cs" />
+    <Compile Include="Models\ServiceModels\ProductCategoryModels.cs" />
+    <Compile Include="Models\ServiceModels\ProductModels.cs" />
+    <Compile Include="Models\ServiceModels\RestaurantModels.cs" />
+    <Compile Include="Models\ViewModels\ProductViewModel.cs" />
+    <Compile Include="Models\ViewModels\RestaurantViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\IRestaurantServiceClient.cs" />
     <Compile Include="Service\RestaurantServiceClient.cs" />
@@ -292,14 +298,13 @@
     <Content Include="Images\orderedList8.png" />
     <Content Include="Images\orderedList9.png" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
     <Content Include="packages.config" />
     <None Include="readme.txt" />
+    <Content Include="Views\Shared\_Products.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

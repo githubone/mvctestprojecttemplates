@@ -5,6 +5,7 @@ using JustEatRAPPS.Service;
 using System.Web;
 using JustEatRAPPS.Controllers;
 using JustEatRAPPS.Common;
+using System.Text.RegularExpressions;
 
 [assembly: PreApplicationStartMethod(typeof(HomeController), "Initialize")]
 namespace JustEatRAPPS.Controllers
@@ -24,7 +25,7 @@ namespace JustEatRAPPS.Controllers
 
         public ActionResult Index()
         {
-            var mainRestaurantViewModel = new MainRestaurantViewModel() { PostCode = "se 19" };
+            var mainRestaurantViewModel = new MainRestaurantViewModel() { PostCode = "se19" };
             return View(mainRestaurantViewModel);
         }
 
@@ -32,12 +33,31 @@ namespace JustEatRAPPS.Controllers
         [ActionName("Index")]
         public async Task<ActionResult> Search(MainRestaurantViewModel mainRestaurantViewModel)
         {
-
             var result = await restaurantServiceClient.GetRestaurants(mainRestaurantViewModel.PostCode);
             mainRestaurantViewModel.Restaurants = result;
             return View(mainRestaurantViewModel);
         }
 
-       
+
+        [HttpPost]
+        public ActionResult Products(MainProductViewModel mainProductViewModel)
+        {
+            return PartialView("_Products", mainProductViewModel);
+
+        }
+      
+        #region Validation
+        private bool ValidatePostcode(string postcode)
+        {
+            Regex regex = new Regex("^(GIR 0AA|[A-PR-UWYZ]([0-9]{1,2}|([A-HK-Y][0-9]|[A-HK-Y][0-9]([0-9]|[ABEHMNPRV-Y]))|[0-9][A-HJKPS-UW]) {0,1}[0-9][ABD-HJLNP-UW-Z]{2})$");
+            return regex.IsMatch(postcode.ToUpper().Trim());
+        }
+
+        private string TrimPostCode(string postCode)
+        {
+            return Regex.Replace(postCode, @"\s", string.Empty);
+        }
+
+        #endregion
     }
 }
