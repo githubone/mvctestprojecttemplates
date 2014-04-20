@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A39F19
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustEatRAPPS.Spec", "JustEatRAPPS.Spec\JustEatRAPPS.Spec.csproj", "{4FA35C03-7223-4E2F-9C00-A2691A686C02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{12FB10A4-1F43-4C44-810A-2FCE93BB3011}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12FB10A4-1F43-4C44-810A-2FCE93BB3011}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12FB10A4-1F43-4C44-810A-2FCE93BB3011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FA35C03-7223-4E2F-9C00-A2691A686C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FA35C03-7223-4E2F-9C00-A2691A686C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FA35C03-7223-4E2F-9C00-A2691A686C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FA35C03-7223-4E2F-9C00-A2691A686C02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

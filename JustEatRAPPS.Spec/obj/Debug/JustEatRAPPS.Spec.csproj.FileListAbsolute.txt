@@ -1,0 +1,12 @@
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\JustEatRAPPS.Spec.dll.config
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\JustEatRAPPS.Spec.dll
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\JustEatRAPPS.Spec.pdb
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\nunit.framework.dll
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\TechTalk.SpecFlow.dll
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\WatiN.Core.dll
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\nunit.framework.xml
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\WatiN.Core.xml
+I:\program\git\restgembira\JustEatRAPPS.Spec\obj\Debug\JustEatRAPPS.Spec.dll
+I:\program\git\restgembira\JustEatRAPPS.Spec\obj\Debug\JustEatRAPPS.Spec.pdb
+I:\program\git\restgembira\JustEatRAPPS.Spec\bin\Debug\Interop.SHDocVw.dll
+I:\program\git\restgembira\JustEatRAPPS.Spec\obj\Debug\JustEatRAPPS.Spec.csprojResolveAssemblyReference.cache

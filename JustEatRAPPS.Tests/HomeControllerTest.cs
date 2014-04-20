@@ -129,8 +129,5 @@ namespace JustEatRAPPS.Tests.Controllers
             // Act
             var result = await controller.Products(viewModel);
         }
-
-        
-     
     }
 }
